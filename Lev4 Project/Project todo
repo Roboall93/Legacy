@@ -1,0 +1,30 @@
+Things to do:
+~Fix project upload template (sort of)
+#Add checking for preference assignment
+#	- Duplicate rankings
+#	- Same project
+#	- 2 projects from 1 supervisor - write a function!
+#Write test data
+Consider implementation of admin interface
+#Consider stages (Setup, upload, preference, assignment, etc)
+	- django-solo module not working
+
+#Add fields for project and supervisor capacity
+
+
+Project notes:
+Design
+
+
+Fixes:
+#Add supervisor identifier to project (just charField?)
+#- Then finsh supervisor checker algorithm
+#Delete database and rewrite pop script with new field values
+#Look up example admin panels for syntax
+Look up CSS box model and dividing page into segments
+Try putting links in the navbar
+
+#Project foreignkey refers back to supervisor (wrong way round currently)
+
+Mention adding 'approved' segment for projects to filter and allow admin approval (after admin panel up)
+

@@ -1,0 +1,38 @@
+Slide 1:
+Good Afternoon, my project is "A web application for student project allocation", also known as the Optimal Matching Portal.
+
+Slide 2:
+The optimal matching portal, simply put, is an online application that allows the collection of student preference data relating to project proposals. These projects are proposed by staff supervisors and ranked by the students. It also provides a means of matching students to these projects based on this preference data via a variation of the Housing Allocation problem, which describes matching two discrete sets of objects where one side has preferences for assignment. By collecting these preferences, the system hopes to match students to their most desired project to achieve the best satisfaction overall.
+
+Slide 3:
+These sorts of matching systems already exist in various implemntations already, such as a proposed system for matching refugees with host countries, which aims to achieve things such as matching prospective workers to countries and assigning children to schools. There is also a medical resident matching system that was implemented as far back as 1952, which lets medical students apply for resident positions and list their preferences of establishment. Both of these systems have preferences on both sides, but the general principle is the same - satisfaction for both parties.
+
+Slide 4:
+The system used to implement this application was Django, which is a high-level Python framework for developing web applications that is quite widely used. It handles the heavy lifting and gives you an simpler abstraction of your application to work with, allowing you to focus on design rather than the backend coding. It uses a system of models, views and templates seen here to mediate between the user's browser and the database. The database itself is also created and handled by Django, and doesn't require any explicit SQL programming to use. One reason it was also chosen is that it features a robust set of built-in security features , such as secure password hashing, and protection from various malicious attacks such as XSS scripting, and Cross-Site Request Forgeries.
+
+Slide 5:
+I'll demonstrate a brief example here: The url calls a view which uses a template to render this login page here, which displays a form for logging in. The form generates a HTTP post request upon clicking the submit button that the view can detect and capture to process the form information. The information is validated in the view logic and correct logins are redirected to the appropriate page, while any errors are simply relayed to the template and displayed under the form. Django also allowed me to set custom permission variables, meaning even while logged in, you cannot access the URL of any page you're not meant to have access to.
+
+Slide 6:
+The database design for this application was fairly intuitive, and you can see from this ER diagram a lot of the entities are inter-related with each other. We have discrete entities for all our three user groups - Studens, Supervisors and Administrators, althoug these all relate to a common 'User' entity in the final product. There are entities for projects and the categories they reside in, as well as an entity to store the preference lists for each student, as it has to relate to both the student and project entities. Django does handle creating all of these through its models iterface, and allowed me to populate my database with test data using simple python scripts.
+
+Slide 7:
+After the application was mostly complete I engaged in a User Evaluation study. Juding the usability of the finished site was quite important, as a refined user interface was one of the key areas I was to focus on when designing the new system. While being observed, I had potential end users perform various tasks on the site, such as adding their preferences and creating new project proposals and even performing the matching algorithm itself. Afterward, they filled out a Google Survey consisting of six questions, four of which were judged on a Likert scale from agree to disagree as you can see here.
+
+Slide 8:
+The last two were more open ended to allow users to give their thoughts about the system, and as you can see the feedback is fairly positive, with some of them suggesting only slight usbaility improvements. The avantage of using a google survey this way is that it allowed me to effectively collate the data for later reference as I've done here, and in my report.
+
+Slide 9:
+Overall my project did give me quite a few hurdles to overcome, both technical and non-technical, but i found them to be a great learning experience. I learned a lot about the software design process from start to finish, including handling the design, implementation and testing by myself - with help from Dr Manlove, of course - and creating my own piece of bespoke software from scratch was a really rewarding experience. There is definitely room for future improvement as I've listed some of the suggestions I mad ein my report here - a more robust matching algorithm, as mine is fairly simple,  a way to collect the matching statistics so staff can analyze the effectiveness of the algorithms, and naturally maybe a few tweaks to the UI as it's a little rough around the edges here and there.
+
+Slide 10:
+That's all I have, so thank you for listening to my presentation! I'll now open the floor to any questions.
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+Preferences checks:
+- Check if preference is already selected
+- If software engineering student
+- Check if prefs already has more than two supervisor
+
+Project ranking on dashboard
+- Will it complain when user doesn't have five projects?
+- have normal save and 'finalise' button to commit choices
+
+Students not ranking five projects?
+- Do a check for all students with list of five?
+- Fill empty spaces with random projects
+- Have list of students with unfinished lists and ones with finished lists
+
+PROBLEMS:
+- Fix manytomany preference fields (revert git?)
+- Check information being stored/pulled from database filter

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NN4M</string>
+    <string name="welcome">Welcome!</string>
+    <string name="secondpage">This is the second page!</string>
+</resources>

@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1547569779 source:e:\documents\programs\nuclear masses data set\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
